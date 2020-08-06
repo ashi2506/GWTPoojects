@@ -1,0 +1,3 @@
+# Module WebSocket
+# RPC service class, partial path of RPC policy file
+com.example.WebSocket.client.DBConnection, C9D63030035BA95322219771DB62C7DE.gwt.rpc

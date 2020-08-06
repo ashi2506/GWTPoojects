@@ -1,0 +1,2 @@
+serviceClass: com.example.WebSocket.client.DBConnection
+path: C9D63030035BA95322219771DB62C7DE.gwt.rpc

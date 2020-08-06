@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='WebSocket'>
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name="com.google.gwt.logging.Logging" />
+	<!-- Inherit the default GWT style sheet. You can change -->
+	<!-- the theme of your GWT application by uncommenting -->
+	<!-- any one of the following lines. -->
+	<inherits name='com.google.gwt.user.theme.standard.Standard' />
+	<servlet class="com.example.WebSocket.server.MySQLConnection" path="/MySQLConnection"/>  
+	<!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+	<!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/> -->
+	<set-property name="gwt.logging.logLevel" value="FINE" />
+<!-- Write messages to browser consoles and to the jvm and dev mode -->
+<!-- Note that these are the defaults, so we don’t actually need to list them -->
+<set-property name="gwt.logging.consoleHandler" value="ENABLED" />
+<set-property name="gwt.logging.developmentModeHandler" value="ENABLED" />
+<set-property name="gwt.logging.systemHandler" value="ENABLED" />
+<set-property name="gwt.logging.enabled" value="TRUE" />
+<!-- Disable the popupHandler when using GXT layouts, they draw above -->
+<!-- Leave RPC logging disabled, as we aren’t setting that up in this example -->
+<set-property name="gwt.logging.simpleRemoteHandler" value="DISABLED" />
+<!-- Ask GXT to log all internal details -->
+
+
+	<!-- Other module inherits -->
+
+	<!-- Specify the app entry point class. -->
+	<entry-point class='com.example.WebSocket.client.WebSocket' />
+	
+	<!-- Specify the paths for translatable code -->
+	<source path='client' />
+	<source path='shared' />
+
+</module>

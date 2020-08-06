@@ -1,0 +1,61 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with field='resource'
+		type='com.example.WebSocket.client.LoginResource' />
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="container login">
+			<form class="form-horizontal">
+				<div class="form-group group">
+					<g:Label ui:field="username">Username</g:Label>
+					<div class="col-sm-10 textbox">
+						<g:TextBox ui:field="userNameTextBox" />
+					</div>
+				</div>
+				<div class="form-group group">
+					<g:Label ui:field="password">Password</g:Label>
+					<div class="col-sm-10 textbox">
+						<g:TextBox ui:field="passwordTextBox" />
+					</div>
+				</div>
+				<div class="form-group group">
+					<div class="btn-group">
+						<g:Label>Chatroom</g:Label>
+						<g:ListBox  ui:field="chatroom">
+							<g:item  value='arduino'>
+								arduino
+							</g:item>
+							<g:item value='java'>
+								java
+							</g:item>
+								<g:item value='jquery'>
+								jquery
+							</g:item>
+								<g:item value='scala'>
+								scala
+							</g:item>
+						</g:ListBox>
+						<!-- <ListBox ui:field="chatroom">
+							<option>arduino</option>
+							<option>java</option>
+							<option>groovy</option>
+							<option>scala</option>
+						</select> -->
+					</div>
+				</div>
+				<div class="form-group group">
+					<g:Button ui:field="ok">ok</g:Button>
+					<g:Button ui:field="register">register</g:Button>
+				</div>
+				<div class="form-group">
+					<div class="col-sm col-sm-10">
+						<g:Label ui:field="Error" />
+					</div>
+				</div>
+			</form>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
